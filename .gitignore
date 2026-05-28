@@ -1,0 +1,42 @@
+# dependencies
+node_modules/
+functions/node_modules/
+.pnp
+.pnp.*
+
+# builds
+.next/
+out/
+build/
+functions/lib/
+coverage/
+
+# local environment and secrets
+.env
+.env.local
+.env.*.local
+functions/.runtimeconfig.json
+serviceAccountKey.json
+*.pem
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+firebase-debug.log
+firestore-debug.log
+deploy_debug.txt
+deploy_log.txt
+deploy_output.txt
+lint.txt
+lint_output.txt
+eslint_report.json
+
+# OS/editor
+.DS_Store
+.vscode/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
