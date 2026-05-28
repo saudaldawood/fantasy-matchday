@@ -1,0 +1,15 @@
+.card {
+    background: var(--color-surface);
+    border: var(--border-light);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    transition: var(--ease-out);
+    position: relative;
+    overflow: hidden;
+}
+
+.hover:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+    background: var(--color-surface-hover);
+}

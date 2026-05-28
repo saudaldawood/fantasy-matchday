@@ -1,0 +1,201 @@
+.levelDisplay {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.levelDisplay.compact {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skeleton {
+    height: 60px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 8px;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Compact Mode */
+.icon {
+    font-size: 1.25rem;
+}
+
+.levelBadge {
+    background: var(--level-color, #666);
+    color: white;
+    padding: 0.25rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+/* Full Display */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.iconLarge {
+    font-size: 2.5rem;
+}
+
+.levelInfo {
+    flex: 1;
+}
+
+.levelNumber {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--level-color, #333);
+}
+
+.levelName {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Progress Section */
+.progressSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.progressBar {
+    height: 8px;
+    background: #e5e5e5;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    background: var(--level-color, #00A651);
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+.xpInfo {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* Inline Badge */
+.inlineBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.15rem 0.5rem;
+    background: var(--level-color, #666);
+    color: white;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Card */
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid var(--level-color, #00A651);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.currentLevel {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.bigIcon {
+    font-size: 2.5rem;
+}
+
+.currentLevel h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--level-color, #333);
+    margin: 0;
+}
+
+.currentLevel p {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 0;
+}
+
+.totalXP {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+    background: #f0f0f0;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+.progressBarLarge {
+    height: 12px;
+    background: #e5e5e5;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 0.75rem;
+}
+
+.progressFillLarge {
+    height: 100%;
+    background: linear-gradient(90deg, var(--level-color, #00A651), #00d668);
+    border-radius: 6px;
+    transition: width 0.5s ease;
+}
+
+.progressLabels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+.nextLevel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #f8f8f8;
+    border-radius: 12px;
+    margin-top: 1rem;
+}
+
+.nextLevel span:first-child {
+    font-weight: 600;
+    color: #333;
+}
+
+.reward {
+    color: var(--primary-color, #00A651);
+    font-weight: 600;
+}

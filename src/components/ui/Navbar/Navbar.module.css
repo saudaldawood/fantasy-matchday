@@ -1,0 +1,236 @@
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1200px;
+    z-index: 1000;
+    padding: 1rem 2rem;
+    background: rgba(15, 15, 15, 0.8);
+    backdrop-filter: blur(16px);
+    border: var(--border-light);
+    border-radius: var(--radius-full);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: -0.03em;
+}
+
+.navLinks {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navLink {
+    font-weight: 500;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+}
+
+.navLink:hover {
+    color: var(--color-primary);
+}
+
+.signUpBtn {
+    color: #000 !important;
+}
+
+.mobileMenuBtn {
+    display: none;
+    color: var(--color-text-main);
+    cursor: pointer;
+}
+
+/* User Menu */
+.userMenuContainer {
+    position: relative;
+}
+
+.userButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.userButton:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.userDropdown {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    background: rgba(15, 23, 42, 0.98);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 0.5rem;
+    min-width: 160px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.dropdownItem {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.dropdownItem:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Notification Bell */
+.notificationBell {
+    display: flex;
+    align-items: center;
+}
+
+.bellButton {
+    background: transparent;
+    border: none;
+    color: var(--color-text-muted);
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bellButton:hover {
+    color: var(--color-primary);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* User Avatar */
+.userAvatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-primary), #00d97e);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.userAvatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.userName {
+    font-weight: 500;
+}
+
+/* Dropdown Header */
+.dropdownHeader {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 0.25rem;
+}
+
+.dropdownName {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.dropdownCredits {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--color-primary);
+}
+
+.dropdownCreditsLink {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    border-radius: 4px;
+    transition: background 0.2s;
+    margin: -0.25rem -0.5rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.dropdownCreditsLink:hover {
+    background: rgba(0, 166, 81, 0.1);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        top: 0;
+        width: 100%;
+        border-radius: 0;
+        border: none;
+        border-bottom: var(--border-light);
+        padding: 1rem;
+    }
+
+    .navLinks {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #0F0F0F;
+        flex-direction: column;
+        padding: 2rem;
+        border-bottom: var(--border-light);
+    }
+
+    .navLinks.active {
+        display: flex;
+    }
+
+    .mobileMenuBtn {
+        display: block;
+    }
+
+    .signUpBtn {
+        width: 100%;
+    }
+
+    .userButton {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .userDropdown {
+        position: relative;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .userName {
+        display: none;
+    }
+
+    .notificationBell {
+        display: none;
+    }
+}

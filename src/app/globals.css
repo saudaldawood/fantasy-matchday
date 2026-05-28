@@ -1,0 +1,180 @@
+/* 
+   Fantasy Matchday - Redesign 2.0 (Future Football)
+   Theme: Neon Pitch (Black, Neon Green, Electric Cyan)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+    /* Palette */
+    --color-bg: #030303;
+    --color-surface: #0F0F0F;
+    --color-surface-hover: #1A1A1A;
+
+    --color-primary: #00FF85;
+    /* Neon Green */
+    --color-secondary: #00D4FF;
+    /* Electric Cyan */
+    --color-accent: #FFFFFF;
+
+    --color-text-main: #FFFFFF;
+    --color-text-muted: #888888;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, var(--color-primary), #00CC6A);
+    --gradient-glow: radial-gradient(circle at center, rgba(0, 255, 133, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 8rem;
+
+    /* Borders & Radius */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 32px;
+    --radius-full: 9999px;
+
+    --border-light: 1px solid rgba(255, 255, 255, 0.08);
+    --border-glow: 1px solid rgba(0, 255, 133, 0.3);
+
+    /* Transitions */
+    --ease-out: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--ease-out);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Utilities */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-muted {
+    color: var(--color-text-muted);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    gap: var(--spacing-md);
+}
+
+.section {
+    padding: var(--spacing-lg) 0;
+}
+
+/* Helper Utilities */
+.w-full {
+    width: 100%;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mt-6 {
+    margin-top: 1.5rem;
+}
+
+.mt-8 {
+    margin-top: 2rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+.gap-6 {
+    gap: 1.5rem;
+}

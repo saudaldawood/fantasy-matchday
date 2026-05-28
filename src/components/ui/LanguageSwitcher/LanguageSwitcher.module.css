@@ -1,0 +1,24 @@
+.switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: 1px solid var(--border-light);
+    color: var(--color-text-muted);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: var(--ease-out);
+    font-family: inherit;
+}
+
+.switcher:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    background: rgba(0, 255, 133, 0.05);
+}
+
+.langCode {
+    font-weight: 600;
+    font-size: 0.9rem;
+}

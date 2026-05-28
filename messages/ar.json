@@ -1,0 +1,273 @@
+{
+    "Navbar": {
+        "features": "المميزات",
+        "howItWorks": "كيف يعمل",
+        "leaderboard": "قائمة المتصدرين",
+        "lineup": "التشكيلة",
+        "matches": "المباريات",
+        "leagues": "الدوريات",
+        "achievements": "الإنجازات",
+        "help": "المساعدة",
+        "login": "تسجيل الدخول",
+        "signUp": "سجل الآن"
+    },
+    "Hero": {
+        "tagline": "اختر تشكيلتك لكل مباراة • اكسب النقاط في الوقت الفعلي",
+        "titlePrefix": "الأفضل",
+        "titleHighlight": "دوري روشن السعودي",
+        "titleSuffix": "فانتازي",
+        "subtitle": "تصدر قائمة المتصدرين مع النقاط المباشرة والجوائز الأسبوعية.",
+        "startPlaying": "ابدأ اللعب",
+        "howItWorks": "كيف يعمل",
+        "totalPlayers": "إجمالي اللاعبين",
+        "prizePool": "مجموع الجوائز",
+        "realTimeScoring": "نقاط مباشرة",
+        "live": "مباشر"
+    },
+    "GameChanger": {
+        "title": "اللعبة تغيرت",
+        "subtitle": "جرب الفانتازي كما لم تعهده من قبل.",
+        "watchVideo": "شاهد الفيديو",
+        "instantImpact": {
+            "title": "تأثير فوري",
+            "description": "لا حاجة للالتزام طوال الموسم. اختر فريقاً لمباراة واحدة وافز فوراً."
+        },
+        "liveData": {
+            "title": "بيانات مباشرة",
+            "description": "مدعومة ببيانات حية. شاهد نقاطك تزداد مع كل حدث في المباراة."
+        },
+        "globalRank": {
+            "title": "تصنيف عالمي",
+            "description": "اصعد في الترتيب. نافس آلاف المشجعين في جميع أنحاء المملكة."
+        },
+        "marquee": {
+            "speedYouCanFeel": "سرعة تشعر بها",
+            "buildYourSquad": "ابنِ فريقك",
+            "competeAndWin": "نافس وافز",
+            "realTimeUpdates": "تحديثات مباشرة"
+        }
+    },
+    "WhyChoose": {
+        "titlePrefix": "لماذا تختار",
+        "titleHighlight": "فانتازي ماتش داي؟",
+        "subtitle1": "مصمم لعشاق دوري روشن السعودي.",
+        "subtitle2": "سريع، تنافسي، وممتع.",
+        "startPlaying": "ابدأ اللعب",
+        "buildYourSquad": {
+            "title": "ابنِ فريقك",
+            "description": "اختر أفضل اللاعبين، أدر ميزانيتك، وشكّل تشكيلة رابحة."
+        },
+        "competeAndWin": {
+            "title": "نافس وافز",
+            "description": "انضم لدوريات عامة أو أنشئ دورياتك الخاصة. افز بجوائز أسبوعية."
+        },
+        "realTimeUpdates": {
+            "title": "تحديثات مباشرة",
+            "description": "نتائج حية، إحصائيات اللاعبين، وأحداث المباراة فور حدوثها."
+        }
+    },
+    "Matches": {
+        "titlePrefix": "المباريات",
+        "titleHighlight": "القادمة",
+        "selectMatch": "اختر المباراة",
+        "live": "مباشر",
+        "scheduled": "مجدولة",
+        "upcoming": "قادمة",
+        "liveMatchesTitle": "🔴 المباريات المباشرة",
+        "upcomingMatchesTitlePrefix": "المباريات",
+        "upcomingMatchesTitleHighlight": "القادمة"
+    },
+    "Prizes": {
+        "title": "جوائز",
+        "titleHighlight": "مذهلة",
+        "titleSuffix": "بانتظارك",
+        "subtitle": "افز كل أسبوع وطوال الموسم.",
+        "weeklyCash": {
+            "title": "جائزة أسبوعية",
+            "value": "٥٠,٠٠٠ ريال"
+        },
+        "matchTickets": {
+            "title": "تذاكر مباريات",
+            "value": "تجربة VIP"
+        },
+        "jerseys": {
+            "title": "قمصان",
+            "value": "موقعة من النجوم"
+        },
+        "seasonPrize": {
+            "title": "جائزة الموسم",
+            "value": "٥٠٠,٠٠٠ ريال"
+        }
+    },
+    "ReadyToWin": {
+        "titlePrefix": "جاهز",
+        "titleHighlight": "للفوز؟",
+        "startPlaying": "ابدأ اللعب"
+    },
+    "Footer": {
+        "newsletterText": "ابقَ على اطلاع. اشترك لتلقي التحديثات منا.",
+        "emailPlaceholder": "أدخل بريدك الإلكتروني",
+        "subscribe": "اشترك",
+        "policyText": "بالاشتراك أنت توافق على",
+        "policy": "السياسة",
+        "platform": "المنصة",
+        "liveMatches": "المباريات المباشرة",
+        "leagues": "الدوريات",
+        "players": "اللاعبون",
+        "prizes": "الجوائز",
+        "support": "الدعم",
+        "helpCenter": "مركز المساعدة",
+        "contact": "اتصل بنا",
+        "privacyPolicy": "سياسة الخصوصية",
+        "terms": "الشروط",
+        "learnMore": "اعرف المزيد",
+        "learnMoreText": "المنصة الرسمية للفانتازي لعشاق دوري روشن السعودي.",
+        "copyright": "© حقوق النشر ٢٠٢٥. جميع الحقوق محفوظة.",
+        "accessibility": "إمكانية الوصول",
+        "privacyCookies": "الخصوصية وملفات تعريف الارتباط"
+    },
+    "CTA": {
+        "titlePrefix": "جاهز",
+        "titleHighlight": "للفوز؟",
+        "description": "انضم إلى أسرع مجتمع فانتازي نمواً في المملكة العربية السعودية.",
+        "button": "أنشئ حساباً"
+    },
+    "Auth": {
+        "hello": "مرحباً!",
+        "signUpToGetStarted": "سجل للبدء",
+        "welcomeBack": "مرحباً بعودتك!",
+        "loginSubtitle": "سجل الدخول لإدارة فريقك",
+        "fullName": "الاسم الكامل",
+        "username": "اسم المستخدم",
+        "emailAddress": "البريد الإلكتروني",
+        "phoneNumber": "رقم الهاتف",
+        "password": "كلمة المرور",
+        "register": "تسجيل",
+        "loginButton": "دخول",
+        "noAccount": "ليس لديك حساب؟",
+        "hasAccount": "لديك حساب بالفعل؟",
+        "signUpButton": "إنشاء حساب",
+        "emailLabel": "البريد الإلكتروني",
+        "emailPlaceholder": "أدخل بريدك الإلكتروني",
+        "passwordLabel": "كلمة المرور",
+        "passwordPlaceholder": "أدخل كلمة المرور",
+        "createAccount": "إنشاء",
+        "account": "حساب",
+        "registerSubtitle": "انضم إلى ثورة الفانتازي",
+        "nameLabel": "الاسم الكامل",
+        "namePlaceholder": "أدخل اسمك",
+        "createPasswordPlaceholder": "أنشئ كلمة مرور",
+        "confirmPassword": "تأكيد كلمة المرور",
+        "creatingAccount": "جاري إنشاء الحساب...",
+        "continueWithGoogle": "المتابعة مع جوجل",
+        "orContinueWith": "أو المتابعة مع",
+        "orDivider": "أو",
+        "forgotPassword": "نسيت كلمة المرور؟",
+        "signingIn": "جاري تسجيل الدخول..."
+    },
+    "Leaderboard": {
+        "title": "قائمة المتصدرين",
+        "titlePrefix": "قائمة",
+        "titleHighlight": "المتصدرين",
+        "subtitle": "شاهد من يسيطر على الدوري هذا الأسبوع.",
+        "totalPlayers": "إجمالي اللاعبين",
+        "prizePool": "مجموع الجوائز",
+        "rank": "المركز",
+        "user": "المستخدم",
+        "player": "اللاعب",
+        "points": "النقاط",
+        "matches": "المباريات",
+        "change": "التغيير",
+        "searchPlaceholder": "ابحث عن اللاعبين...",
+        "allMatches": "جميع المباريات",
+        "viewCalendar": "عرض التقويم",
+        "myLeagues": "دورياتي",
+        "privateLeagues": "الدوريات الخاصة",
+        "globalTab": "العالمي",
+        "weeklyTab": "هذا الأسبوع",
+        "matchesTab": "حسب المباراة",
+        "yourRank": "ترتيبك",
+        "loading": "جاري تحميل قائمة المتصدرين...",
+        "noData": "لا توجد تصنيفات بعد",
+        "noDataDesc": "كن أول من يبني تشكيلة!",
+        "noWeeklyData": "لا توجد بيانات أسبوعية",
+        "noWeeklyDataDesc": "العب مباريات هذا الأسبوع للظهور هنا!",
+        "noMatches": "لا توجد مباريات حديثة",
+        "noMatchesDesc": "تحقق مرة أخرى بعد انتهاء المباريات!",
+        "participants": "مشارك",
+        "playersJoined": "لاعب",
+        "topPlayers": "أفضل اللاعبين",
+        "days": {
+            "wednesday": "الأربعاء",
+            "yesterday": "أمس",
+            "today": "اليوم",
+            "tomorrow": "غداً",
+            "sunday": "الأحد",
+            "monday": "الإثنين"
+        }
+    },
+    "Lineup": {
+        "title": "اختر تشكيلتك",
+        "lookingForMatch": "جاري البحث عن مباراة...",
+        "round": "الجولة",
+        "yourTurn": "🟢 دورك",
+        "botPicking": "🔴 {botName} يختار...",
+        "availablePlayers": "اللاعبون المتاحون",
+        "mySquad": "فريقي",
+        "draftLog": "سجل الاختيارات",
+        "picked": "اختار",
+        "you": "أنت",
+        "matchInProgress": "المباراة جارية...",
+        "matchFinished": "انتهت المباراة!",
+        "yourScore": "نتيجتك",
+        "youWon": "🏆 لقد فزت!",
+        "betterLuck": "حظ أوفر في المرة القادمة!",
+        "backToHome": "العودة للرئيسية",
+        "loginRequired": "تسجيل الدخول مطلوب",
+        "loginRequiredDesc": "يرجى تسجيل الدخول لبناء وحفظ تشكيلتك",
+        "loginButton": "تسجيل الدخول",
+        "registerButton": "إنشاء حساب"
+    },
+    "Profile": {
+        "title": "ملفي الشخصي",
+        "loading": "جاري تحميل الملف الشخصي...",
+        "editProfile": "تعديل الملف الشخصي",
+        "displayName": "الاسم المعروض",
+        "email": "البريد الإلكتروني",
+        "emailCannotChange": "لا يمكن تغيير البريد الإلكتروني",
+        "favoriteTeam": "الفريق المفضل (اختياري)",
+        "favoriteTeamPlaceholder": "مثال: الهلال، النصر",
+        "saveChanges": "حفظ التغييرات",
+        "saving": "جاري الحفظ...",
+        "profileUpdated": "تم تحديث الملف الشخصي بنجاح!",
+        "updateFailed": "فشل تحديث الملف الشخصي",
+        "statistics": "الإحصائيات",
+        "totalPoints": "مجموع النقاط",
+        "matchesPlayed": "المباريات",
+        "credits": "الرصيد",
+        "level": "المستوى",
+        "achievements": "الإنجازات",
+        "noAchievements": "لا توجد إنجازات بعد. واصل اللعب!",
+        "matchHistory": "سجل المباريات",
+        "noMatches": "لا يوجد سجل مباريات بعد",
+        "signOut": "تسجيل الخروج",
+        "viewDetails": "عرض التفاصيل",
+        "quickActions": "إجراءات سريعة",
+        "manageTeam": "إدارة الفريق",
+        "manageTeamDesc": "اضبط تشكيلتك",
+        "leagues": "الدوريات",
+        "leaguesDesc": "انضم أو أنشئ دوري",
+        "buyCredits": "شراء رصيد",
+        "buyCreditsDesc": "احصل على المزيد",
+        "transactions": "السجل",
+        "transactionsDesc": "عرض المشتريات",
+        "players": "اللاعبين",
+        "playersDesc": "عرض الإحصائيات"
+    },
+    "UserMenu": {
+        "profile": "الملف الشخصي",
+        "settings": "الإعدادات",
+        "signOut": "تسجيل الخروج",
+        "credits": "الرصيد"
+    }
+}
