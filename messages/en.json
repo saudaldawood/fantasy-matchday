@@ -1,0 +1,274 @@
+{
+    "Navbar": {
+        "features": "Features",
+        "howItWorks": "How it Works",
+        "leaderboard": "Leaderboard",
+        "lineup": "Lineup",
+        "login": "Login",
+        "signUp": "Sign Up",
+        "matches": "Matches",
+        "leagues": "Leagues",
+        "achievements": "Achievements",
+        "friends": "Friends",
+        "help": "Help"
+    },
+    "Hero": {
+        "tagline": "Pick your squad match-by-match • Earn points in real time",
+        "titlePrefix": "THE ULTIMATE",
+        "titleHighlight": "SAUDI PRO LEAGUE",
+        "titleSuffix": "FANTASY",
+        "subtitle": "Dominate the leaderboard with live scoring and weekly prizes.",
+        "startPlaying": "Start Playing",
+        "howItWorks": "How It Works",
+        "totalPlayers": "Total Players",
+        "prizePool": "Prize Pool",
+        "realTimeScoring": "Real-Time Scoring",
+        "live": "Live"
+    },
+    "GameChanger": {
+        "title": "Game Changed",
+        "subtitle": "Experience fantasy football like never before.",
+        "watchVideo": "Watch video",
+        "instantImpact": {
+            "title": "Instant Impact",
+            "description": "No season-long grind. Pick a team for a single match and win instantly."
+        },
+        "liveData": {
+            "title": "Live Data",
+            "description": "Powered by real-time APIs. Watch your points tick up as the action happens."
+        },
+        "globalRank": {
+            "title": "Global Rank",
+            "description": "Climb the ladder. Compete with thousands of fans across the Kingdom."
+        },
+        "marquee": {
+            "speedYouCanFeel": "Speed You Can Feel",
+            "buildYourSquad": "Build Your Squad",
+            "competeAndWin": "Compete and Win",
+            "realTimeUpdates": "Real Time Updates"
+        }
+    },
+    "WhyChoose": {
+        "titlePrefix": "Why Choose",
+        "titleHighlight": "Fantasy Matchday?",
+        "subtitle1": "Built for Saudi Pro League fans.",
+        "subtitle2": "Fast, competitive, and fun.",
+        "startPlaying": "Start Playing",
+        "buildYourSquad": {
+            "title": "Build Your Squad",
+            "description": "Select top players, manage budget, and craft a winning lineup."
+        },
+        "competeAndWin": {
+            "title": "Compete & Win",
+            "description": "Join public leagues or create private ones. Win weekly rewards."
+        },
+        "realTimeUpdates": {
+            "title": "Real-Time Updates",
+            "description": "Live scores, player stats, and instant match events as they happen."
+        }
+    },
+    "Matches": {
+        "titlePrefix": "Upcoming",
+        "titleHighlight": "Matches",
+        "selectMatch": "Select Match",
+        "live": "LIVE",
+        "scheduled": "SCHEDULED",
+        "upcoming": "UPCOMING",
+        "liveMatchesTitle": "🔴 Live Matches",
+        "upcomingMatchesTitlePrefix": "Upcoming",
+        "upcomingMatchesTitleHighlight": "Matches"
+    },
+    "Prizes": {
+        "title": "Amazing",
+        "titleHighlight": "Prizes",
+        "titleSuffix": "Await",
+        "subtitle": "Win big every week and throughout the season.",
+        "weeklyCash": {
+            "title": "Weekly Cash",
+            "value": "50,000 SAR"
+        },
+        "matchTickets": {
+            "title": "Match Tickets",
+            "value": "VIP Experience"
+        },
+        "jerseys": {
+            "title": "Jerseys",
+            "value": "Signed by Stars"
+        },
+        "seasonPrize": {
+            "title": "Season Prize",
+            "value": "500,000 SAR"
+        }
+    },
+    "ReadyToWin": {
+        "titlePrefix": "Ready to",
+        "titleHighlight": "Win?",
+        "startPlaying": "Start Playing"
+    },
+    "Footer": {
+        "newsletterText": "Stay in the know. Subscribe to receive communications from Us.",
+        "emailPlaceholder": "Enter your email",
+        "subscribe": "Subscribe",
+        "policyText": "By subscribing you've accepted the our",
+        "policy": "Policy",
+        "platform": "Platform",
+        "liveMatches": "Live Matches",
+        "leagues": "Leagues",
+        "players": "Players",
+        "prizes": "Prizes",
+        "support": "Support",
+        "helpCenter": "Help Center",
+        "contact": "Contact",
+        "privacyPolicy": "Privacy Policy",
+        "terms": "Terms",
+        "learnMore": "Learn More",
+        "learnMoreText": "The official fantasy football platform for Saudi Pro League fans.",
+        "copyright": "© Copyright 2025. All Rights Reserved.",
+        "accessibility": "Accessibility",
+        "privacyCookies": "Privacy & Cookies"
+    },
+    "CTA": {
+        "titlePrefix": "READY TO",
+        "titleHighlight": "WIN?",
+        "description": "Join the fastest growing fantasy community in Saudi Arabia.",
+        "button": "Create Account"
+    },
+    "Auth": {
+        "hello": "Hello!",
+        "signUpToGetStarted": "Sign Up to Get Started",
+        "welcomeBack": "Welcome Back!",
+        "loginSubtitle": "Login to manage your squad",
+        "fullName": "Full Name",
+        "username": "Username",
+        "emailAddress": "Email Address",
+        "phoneNumber": "Phone Number",
+        "password": "Password",
+        "register": "Register",
+        "loginButton": "Login",
+        "noAccount": "Don't have an account?",
+        "hasAccount": "Already have an account?",
+        "signUpButton": "Sign Up",
+        "emailLabel": "Email Address",
+        "emailPlaceholder": "Enter your email",
+        "passwordLabel": "Password",
+        "passwordPlaceholder": "Enter your password",
+        "createAccount": "CREATE",
+        "account": "ACCOUNT",
+        "registerSubtitle": "Join the fantasy revolution",
+        "nameLabel": "Full Name",
+        "namePlaceholder": "Enter your name",
+        "createPasswordPlaceholder": "Create a password",
+        "confirmPassword": "Confirm Password",
+        "creatingAccount": "Creating Account...",
+        "continueWithGoogle": "Continue with Google",
+        "orContinueWith": "or continue with",
+        "orDivider": "or",
+        "forgotPassword": "Forgot Password?",
+        "signingIn": "Signing In..."
+    },
+    "Leaderboard": {
+        "title": "Leaderboard",
+        "titlePrefix": "GLOBAL",
+        "titleHighlight": "LEADERBOARD",
+        "subtitle": "See who's dominating the league this week.",
+        "totalPlayers": "Total Players",
+        "prizePool": "Prize Pool",
+        "rank": "Rank",
+        "user": "User",
+        "player": "Player",
+        "points": "Points",
+        "matches": "Matches",
+        "change": "Change",
+        "searchPlaceholder": "Search players...",
+        "allMatches": "All Matches",
+        "viewCalendar": "View Calendar",
+        "myLeagues": "My Leagues",
+        "privateLeagues": "Private Leagues",
+        "globalTab": "Global",
+        "weeklyTab": "This Week",
+        "matchesTab": "By Match",
+        "yourRank": "Your Rank",
+        "loading": "Loading leaderboard...",
+        "noData": "No rankings yet",
+        "noDataDesc": "Be the first to build a lineup!",
+        "noWeeklyData": "No weekly data",
+        "noWeeklyDataDesc": "Play matches this week to appear here!",
+        "noMatches": "No recent matches",
+        "noMatchesDesc": "Check back after matches are played!",
+        "participants": "participants",
+        "playersJoined": "players",
+        "topPlayers": "Top Players",
+        "days": {
+            "wednesday": "Wednesday",
+            "yesterday": "Yesterday",
+            "today": "Today",
+            "tomorrow": "Tomorrow",
+            "sunday": "Sunday",
+            "monday": "Monday"
+        }
+    },
+    "Lineup": {
+        "title": "Pick Your Lineup",
+        "lookingForMatch": "Looking for match...",
+        "round": "Round",
+        "yourTurn": "🟢 YOUR TURN",
+        "botPicking": "🔴 {botName} Picking...",
+        "availablePlayers": "Available Players",
+        "mySquad": "My Squad",
+        "draftLog": "Draft Log",
+        "picked": "picked",
+        "you": "You",
+        "matchInProgress": "Match in Progress...",
+        "matchFinished": "Match Finished!",
+        "yourScore": "Your Score",
+        "youWon": "🏆 YOU WON!",
+        "betterLuck": "Better luck next time!",
+        "backToHome": "Back to Home",
+        "loginRequired": "Login Required",
+        "loginRequiredDesc": "Please login to build and save your lineup",
+        "loginButton": "Login",
+        "registerButton": "Create Account"
+    },
+    "Profile": {
+        "title": "My Profile",
+        "loading": "Loading profile...",
+        "editProfile": "Edit Profile",
+        "displayName": "Display Name",
+        "email": "Email Address",
+        "emailCannotChange": "Email cannot be changed",
+        "favoriteTeam": "Favorite Team (Optional)",
+        "favoriteTeamPlaceholder": "e.g., Al-Hilal, Al-Nassr",
+        "saveChanges": "Save Changes",
+        "saving": "Saving...",
+        "profileUpdated": "Profile updated successfully!",
+        "updateFailed": "Failed to update profile",
+        "statistics": "Statistics",
+        "totalPoints": "Total Points",
+        "matchesPlayed": "Matches",
+        "credits": "Credits",
+        "level": "Level",
+        "achievements": "Achievements",
+        "noAchievements": "No achievements yet. Keep playing!",
+        "matchHistory": "Match History",
+        "noMatches": "No match history yet",
+        "signOut": "Sign Out",
+        "viewDetails": "View Details",
+        "quickActions": "Quick Actions",
+        "manageTeam": "Manage Team",
+        "manageTeamDesc": "Set your lineup",
+        "leagues": "Leagues",
+        "leaguesDesc": "Join or create leagues",
+        "buyCredits": "Buy Credits",
+        "buyCreditsDesc": "Get more credits",
+        "transactions": "History",
+        "transactionsDesc": "View purchases",
+        "players": "Players",
+        "playersDesc": "View stats"
+    },
+    "UserMenu": {
+        "profile": "Profile",
+        "settings": "Settings",
+        "signOut": "Sign Out",
+        "credits": "Credits"
+    }
+}
