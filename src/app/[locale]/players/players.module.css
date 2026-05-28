@@ -1,0 +1,94 @@
+.container {
+    min-height: 100vh;
+    padding: 140px 2rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.highlight {
+    color: #4ade80;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #94a3b8;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.content {
+    margin-top: 3rem;
+}
+
+.comingSoon {
+    text-align: center;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    border: 2px solid #4ade80;
+    border-radius: 20px;
+    padding: 4rem 2rem;
+}
+
+.iconLarge {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+.comingSoon h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.comingSoon p {
+    font-size: 1.1rem;
+    color: #94a3b8;
+    margin-bottom: 1.5rem;
+}
+
+.featureList {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.featureList li {
+    font-size: 1.2rem;
+    color: #e2e8f0;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    background: rgba(74, 222, 128, 0.1);
+    border-radius: 8px;
+}
+
+.note {
+    font-size: 1rem;
+    color: #4ade80;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        padding: 100px 1rem 2rem;
+    }
+}

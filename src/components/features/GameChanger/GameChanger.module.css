@@ -1,0 +1,183 @@
+.section {
+    position: relative;
+    background: #030303;
+    padding: 80px 0 0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    gap: 60px;
+}
+
+/* Left Content */
+.leftContent {
+    flex: 1;
+    max-width: 400px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.watchBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.watchBtn:hover {
+    color: var(--color-primary);
+}
+
+.playIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    color: #030303;
+}
+
+/* Right Content - Features */
+.rightContent {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.feature {
+    border-left: 2px solid transparent;
+    padding-left: 0;
+    transition: all 0.3s ease;
+}
+
+.featureTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+.featureDesc {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.6;
+}
+
+/* Soccer Player Image */
+.imageContainer {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 60px auto 0;
+    padding: 0 20px;
+}
+
+.playerImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+/* Scrolling Marquee */
+.marquee {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(0, 255, 133, 0.1) 0%, rgba(0, 255, 133, 0.05) 50%, rgba(0, 255, 133, 0.1) 100%);
+    padding: 1rem 0;
+    margin-top: 40px;
+}
+
+.marqueeTrack {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    animation: scroll 20s linear infinite;
+    width: max-content;
+}
+
+.marqueeItem {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    white-space: nowrap;
+}
+
+.marqueeDot {
+    color: var(--color-primary);
+    opacity: 0.5;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        padding: 0 20px;
+        gap: 40px;
+    }
+
+    .leftContent,
+    .rightContent {
+        max-width: 100%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .section {
+        padding: 60px 0 0;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .featureTitle {
+        font-size: 1.25rem;
+    }
+
+    .marqueeItem {
+        font-size: 0.9rem;
+    }
+}

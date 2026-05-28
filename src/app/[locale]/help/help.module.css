@@ -1,0 +1,183 @@
+.container {
+    min-height: 100vh;
+    padding: 140px 2rem 4rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.highlight {
+    color: #4ade80;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #94a3b8;
+}
+
+.faqSection {
+    margin-bottom: 3rem;
+}
+
+.faqItem {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.8));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.faqItem h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.faqItem p {
+    color: #94a3b8;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.quickLinks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.quickLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.8));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.quickLink:hover {
+    transform: translateY(-4px);
+    border-color: #4ade80;
+    box-shadow: 0 8px 24px rgba(74, 222, 128, 0.2);
+}
+
+.faqSections {
+    margin-bottom: 3rem;
+}
+
+.section {
+    margin-bottom: 1rem;
+}
+
+.sectionHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.8));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.sectionHeader:hover {
+    border-color: #4ade80;
+}
+
+.sectionHeader.open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-color: transparent;
+}
+
+.sectionHeader h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.sectionHeader svg {
+    transition: transform 0.3s;
+}
+
+.sectionHeader.open svg {
+    transform: rotate(180deg);
+}
+
+.sectionContent {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.6), rgba(15, 23, 42, 0.6));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: none;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 1.5rem;
+}
+
+.contactBox {
+    background: linear-gradient(135deg, #4ade80, #22c55e);
+    border-radius: 16px;
+    padding: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contactBox h2 {
+    font-size: 2rem;
+    margin: 0;
+    color: #000;
+}
+
+.contactBox p {
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 0;
+}
+
+.contactButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.contactButton:hover {
+    background: rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        padding: 100px 1rem 2rem;
+    }
+}

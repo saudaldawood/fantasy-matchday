@@ -1,0 +1,395 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Formation Selector */
+.formationSelector {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background: var(--bg-secondary, #111);
+    border: 1px solid var(--border-color, #222);
+    border-radius: 10px;
+}
+
+.formationLabel {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-secondary, #888);
+    margin-right: 0.5rem;
+}
+
+.formationBtn {
+    padding: 0.5rem 0.75rem;
+    background: transparent;
+    border: 1px solid var(--border-color, #333);
+    border-radius: 6px;
+    color: var(--text-secondary, #888);
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.formationBtn:hover {
+    border-color: var(--primary-color, #00a651);
+    color: var(--text-primary, #fff);
+}
+
+.formationBtn.active {
+    background: var(--primary-color, #00a651);
+    border-color: var(--primary-color, #00a651);
+    color: white;
+}
+
+/* Lineup Container */
+.lineupContainer {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 1rem;
+    min-height: 500px;
+}
+
+/* Pitch */
+.pitch {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.pitchBg {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem 1.5rem;
+    background: linear-gradient(to bottom, #1a4d2e, #0f3d22);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pitchBg::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.pitchBg::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Formation Row */
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 1;
+}
+
+/* Player Slot */
+.playerSlot {
+    position: relative;
+    width: 60px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.playerSlot.empty {
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.playerSlot.empty.dragOver {
+    border-color: var(--primary-color, #00a651);
+    background: rgba(0, 166, 81, 0.2);
+    transform: scale(1.1);
+}
+
+.playerSlot.filled {
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.playerSlot.filled:hover {
+    border-color: var(--primary-color, #00a651);
+}
+
+.playerSlot.captain {
+    border-color: #ffd700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.slotLabel {
+    font-size: 0.625rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.playerImg {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.playerName {
+    font-size: 0.5rem;
+    color: white;
+    text-align: center;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 0.25rem;
+}
+
+.removeBtn {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--danger-color, #dc3545);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.playerSlot:hover .removeBtn {
+    opacity: 1;
+}
+
+.captainBadge {
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffd700;
+    color: #1a1a1a;
+    font-size: 0.5rem;
+    font-weight: 700;
+    padding: 0.125rem 0.375rem;
+    border-radius: 4px;
+}
+
+/* Bench */
+.bench {
+    padding: 1rem;
+    background: var(--bg-secondary, #111);
+    border: 1px solid var(--border-color, #222);
+    border-radius: 10px;
+}
+
+.bench.dragOver {
+    border-color: var(--primary-color, #00a651);
+    background: rgba(0, 166, 81, 0.05);
+}
+
+.bench h4 {
+    margin: 0 0 0.75rem 0;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-secondary, #888);
+}
+
+.benchSlots {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.benchPlayer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color, #333);
+    border-radius: 6px;
+}
+
+.benchPlayer.emptyBench {
+    color: var(--text-secondary, #888);
+    border-style: dashed;
+}
+
+.benchPos {
+    font-size: 0.625rem;
+    font-weight: 600;
+    color: var(--primary-color, #00a651);
+}
+
+.benchName {
+    font-size: 0.75rem;
+    color: var(--text-primary, #fff);
+}
+
+/* Player List */
+.playerList {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-secondary, #111);
+    border: 1px solid var(--border-color, #222);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.listHeader {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color, #222);
+}
+
+.listHeader h3 {
+    margin: 0 0 0.75rem 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-primary, #fff);
+}
+
+.positionFilter {
+    display: flex;
+    gap: 0.375rem;
+}
+
+.filterBtn {
+    padding: 0.375rem 0.625rem;
+    background: transparent;
+    border: 1px solid var(--border-color, #333);
+    border-radius: 4px;
+    color: var(--text-secondary, #888);
+    font-size: 0.625rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filterBtn:hover {
+    border-color: var(--primary-color, #00a651);
+}
+
+.filterBtn.active {
+    background: var(--primary-color, #00a651);
+    border-color: var(--primary-color, #00a651);
+    color: white;
+}
+
+.playerCards {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0.5rem;
+    max-height: 450px;
+}
+
+.playerCard {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color, #222);
+    border-radius: 8px;
+    cursor: grab;
+    transition: all 0.2s ease;
+}
+
+.playerCard:hover {
+    border-color: var(--primary-color, #00a651);
+    background: rgba(0, 166, 81, 0.05);
+}
+
+.playerCard:active {
+    cursor: grabbing;
+}
+
+.dragHandle {
+    color: var(--text-tertiary, #555);
+}
+
+.cardImg {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cardImgPlaceholder {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--text-secondary, #888);
+}
+
+.cardInfo {
+    flex: 1;
+    min-width: 0;
+}
+
+.cardName {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-primary, #fff);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cardMeta {
+    font-size: 0.625rem;
+    color: var(--text-secondary, #888);
+}
+
+.cardRating {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--primary-color, #00a651);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .lineupContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .playerList {
+        order: -1;
+        max-height: 300px;
+    }
+
+    .playerCards {
+        max-height: 200px;
+    }
+}

@@ -1,0 +1,198 @@
+.matchCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 20px;
+    min-width: 280px;
+    transition: all 0.3s ease;
+}
+
+.matchCard:hover {
+    transform: translateY(-4px);
+}
+
+/* Green Variant */
+.greenVariant {
+    background: linear-gradient(135deg, #00FF85 0%, #00CC6A 50%, #00994D 100%);
+}
+
+/* Dark Variant */
+.darkVariant {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Teams Row */
+.teamsRow {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.teamSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.teamLogo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+
+.darkVariant .teamLogo {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.teamLogo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.teamLogo span {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.darkVariant .teamLogo span {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.teamName {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #030303;
+    text-align: center;
+}
+
+.darkVariant .teamName {
+    color: #fff;
+}
+
+/* Center Section */
+.centerSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.matchStatus {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.darkVariant .matchStatus {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.vs {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #030303;
+}
+
+.darkVariant .vs {
+    color: var(--color-primary);
+}
+
+/* Match Info */
+.matchInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.venue {
+    font-size: 0.75rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.darkVariant .venue {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.dateTime {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #030303;
+}
+
+.darkVariant .dateTime {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Select Button */
+.selectBtn {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.greenBtn {
+    background: rgba(0, 0, 0, 0.15);
+    color: #030303;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.greenBtn:hover {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.darkBtn {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.darkBtn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .matchCard {
+        padding: 1.25rem;
+        min-width: 240px;
+    }
+
+    .teamLogo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .teamName {
+        font-size: 0.75rem;
+    }
+
+    .vs {
+        font-size: 1rem;
+    }
+}
