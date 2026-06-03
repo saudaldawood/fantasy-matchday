@@ -1,0 +1,258 @@
+.pageWrapper {
+    min-height: 100vh;
+    background: var(--bg-primary, #0a0a0a);
+    padding: 120px 1rem 4rem;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    color: var(--text-secondary, #888);
+    gap: 1rem;
+}
+
+/* Header */
+.header {
+    margin-bottom: 1.5rem;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-primary, #fff);
+}
+
+.subtitle {
+    margin: 0.25rem 0 0 0;
+    color: var(--text-secondary, #888);
+    font-size: 0.875rem;
+}
+
+/* Summary Grid */
+.summaryGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.summaryCard {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: rgba(0, 166, 81, 0.1);
+    border: 1px solid rgba(0, 166, 81, 0.2);
+    border-radius: 12px;
+}
+
+.summaryCard.spent {
+    background: rgba(255, 99, 71, 0.1);
+    border-color: rgba(255, 99, 71, 0.2);
+}
+
+.summaryIcon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 166, 81, 0.15);
+    border-radius: 10px;
+    color: var(--primary-color, #00a651);
+}
+
+.summaryCard.spent .summaryIcon {
+    background: rgba(255, 99, 71, 0.15);
+    color: #ff6347;
+}
+
+.summaryValue {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary, #fff);
+}
+
+.summaryLabel {
+    font-size: 0.75rem;
+    color: var(--text-secondary, #888);
+}
+
+/* Filter Bar */
+.filterBar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.filterBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1rem;
+    background: var(--bg-secondary, #111);
+    border: 1px solid var(--border-color, #222);
+    border-radius: 8px;
+    color: var(--text-primary, #fff);
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filterBtn:hover {
+    border-color: var(--primary-color, #00a651);
+}
+
+.filterDropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0.5rem;
+    background: var(--bg-secondary, #111);
+    border: 1px solid var(--border-color, #222);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.filterOption {
+    display: block;
+    width: 100%;
+    padding: 0.625rem 1rem;
+    background: transparent;
+    border: none;
+    color: var(--text-secondary, #888);
+    font-size: 0.875rem;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filterOption:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary, #fff);
+}
+
+.filterOption.active {
+    background: rgba(0, 166, 81, 0.1);
+    color: var(--primary-color, #00a651);
+}
+
+.resultCount {
+    font-size: 0.75rem;
+    color: var(--text-secondary, #888);
+    margin-left: auto;
+}
+
+/* Transactions List */
+.transactionsList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1rem;
+    color: var(--text-secondary, #888);
+    text-align: center;
+}
+
+.empty h3 {
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1.125rem;
+    color: var(--text-primary, #fff);
+}
+
+.empty p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+/* Transaction Item */
+.transactionItem {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: var(--bg-secondary, #111);
+    border: 1px solid var(--border-color, #222);
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.transactionItem:hover {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.transactionIcon {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+}
+
+.iconEarned {
+    color: var(--primary-color, #00a651);
+}
+
+.iconSpent {
+    color: #ff6347;
+}
+
+.transactionInfo {
+    flex: 1;
+    min-width: 0;
+}
+
+.transactionLabel {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-primary, #fff);
+}
+
+.transactionDate {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-secondary, #888);
+    margin-top: 0.125rem;
+}
+
+.transactionAmount {
+    font-size: 1rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+
+.transactionAmount.positive {
+    color: var(--primary-color, #00a651);
+}
+
+.transactionAmount.negative {
+    color: #ff6347;
+}
+
+@media (max-width: 480px) {
+    .summaryGrid {
+        grid-template-columns: 1fr;
+    }
+}

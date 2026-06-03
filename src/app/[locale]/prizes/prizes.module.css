@@ -1,0 +1,152 @@
+.container {
+    min-height: 100vh;
+    padding: 140px 2rem 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.highlight {
+    color: #4ade80;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #94a3b8;
+}
+
+.prizesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.prizeCard {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.8));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.prizeCard:hover {
+    transform: translateY(-10px);
+    border-color: #4ade80;
+    box-shadow: 0 15px 50px rgba(74, 222, 128, 0.3);
+}
+
+.grandPrize {
+    grid-column: span 2;
+    background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+    border-color: #4ade80;
+}
+
+.prizeIcon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.prizeTitle {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.prizeValue {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #4ade80;
+    margin-bottom: 0.75rem;
+}
+
+.grandPrize .prizeValue {
+    color: #fff;
+}
+
+.prizeDesc {
+    color: #94a3b8;
+    font-size: 1rem;
+}
+
+.grandPrize .prizeDesc {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.howToWin {
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    border-radius: 20px;
+    padding: 3rem;
+    margin-top: 4rem;
+}
+
+.howToWin h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+.stepsList {
+    display: grid;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.step {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.stepNumber {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background: #4ade80;
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.step h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.step p {
+    color: #94a3b8;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        padding: 100px 1rem 2rem;
+    }
+
+    .grandPrize {
+        grid-column: span 1;
+    }
+}
