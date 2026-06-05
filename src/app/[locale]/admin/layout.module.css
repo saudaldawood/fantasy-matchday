@@ -1,0 +1,130 @@
+.adminLayout {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--bg-primary, #0a0a0a);
+}
+
+.sidebar {
+    width: 260px;
+    background-color: var(--bg-secondary, #111);
+    border-right: 1px solid var(--border-color, #222);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 100;
+}
+
+.sidebarHeader {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border-color, #222);
+}
+
+.sidebarHeader h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary, #fff);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sidebarNav {
+    flex: 1;
+    padding: 1rem 0;
+    overflow-y: auto;
+}
+
+.navItem {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.875rem 1.5rem;
+    color: var(--text-secondary, #888);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+}
+
+.navItem:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary, #fff);
+}
+
+.navItem.active {
+    background-color: rgba(0, 166, 81, 0.1);
+    color: var(--primary-color, #00a651);
+    border-left-color: var(--primary-color, #00a651);
+}
+
+.navIcon {
+    font-size: 1.25rem;
+}
+
+.sidebarFooter {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid var(--border-color, #222);
+}
+
+.backLink {
+    color: var(--text-secondary, #888);
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.2s ease;
+}
+
+.backLink:hover {
+    color: var(--text-primary, #fff);
+}
+
+.mainContent {
+    flex: 1;
+    margin-left: 260px;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+.loadingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: var(--text-secondary, #888);
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--border-color, #222);
+    border-top-color: var(--primary-color, #00a651);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    .mainContent {
+        margin-left: 0;
+        padding: 1rem;
+    }
+}

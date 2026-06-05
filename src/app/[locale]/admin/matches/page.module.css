@@ -1,0 +1,344 @@
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary, #fff);
+    margin: 0 0 0.5rem 0;
+}
+
+.subtitle {
+    color: var(--text-secondary, #888);
+    margin: 0;
+}
+
+.loading,
+.error,
+.emptyState {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    color: var(--text-secondary, #888);
+    grid-column: 1 / -1;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.filterSelect {
+    padding: 0.75rem 1rem;
+    background: var(--bg-secondary, #111);
+    border: 1px solid var(--border-color, #222);
+    border-radius: 8px;
+    color: var(--text-primary, #fff);
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.refreshButton {
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    border: 1px solid var(--border-color, #333);
+    border-radius: 8px;
+    color: var(--text-primary, #fff);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.refreshButton:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--primary-color, #00a651);
+}
+
+/* Matches Grid */
+.matchesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+}
+
+.matchCard {
+    background: var(--bg-secondary, #111);
+    border: 1px solid var(--border-color, #222);
+    border-radius: 12px;
+    padding: 1.25rem;
+    transition: all 0.2s ease;
+}
+
+.matchCard:hover {
+    border-color: var(--primary-color, #00a651);
+    box-shadow: 0 4px 20px rgba(0, 166, 81, 0.1);
+}
+
+.matchHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.statusBadge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.statusBadge.upcoming {
+    background: rgba(0, 102, 204, 0.2);
+    color: #0066cc;
+}
+
+.statusBadge.live {
+    background: rgba(220, 53, 69, 0.2);
+    color: #dc3545;
+    animation: pulse 2s infinite;
+}
+
+.statusBadge.finished {
+    background: rgba(0, 166, 81, 0.2);
+    color: #00a651;
+}
+
+.statusBadge.postponed {
+    background: rgba(255, 193, 7, 0.2);
+    color: #ffc107;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+}
+
+.matchDate {
+    font-size: 0.75rem;
+    color: var(--text-secondary, #888);
+}
+
+/* Teams */
+.matchTeams {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.teamLogo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.teamName {
+    font-size: 0.75rem;
+    color: var(--text-primary, #fff);
+    text-align: center;
+    line-height: 1.2;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-primary, #fff);
+}
+
+.scoreDivider {
+    color: var(--text-secondary, #888);
+}
+
+/* Footer */
+.matchFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color, #222);
+}
+
+.participantCount {
+    font-size: 0.875rem;
+    color: var(--text-secondary, #888);
+}
+
+.editButton {
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: 1px solid var(--border-color, #333);
+    border-radius: 6px;
+    color: var(--text-primary, #fff);
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.editButton:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--primary-color, #00a651);
+}
+
+/* Modal */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: var(--bg-secondary, #111);
+    border: 1px solid var(--border-color, #222);
+    border-radius: 16px;
+    padding: 2rem;
+    max-width: 450px;
+    width: 90%;
+}
+
+.modal h2 {
+    margin: 0 0 0.5rem 0;
+    color: var(--text-primary, #fff);
+}
+
+.matchInfo {
+    color: var(--text-secondary, #888);
+    margin: 0 0 1.5rem 0;
+    font-size: 0.875rem;
+}
+
+.scoreInputs {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.scoreInput {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.scoreInput label {
+    font-size: 0.75rem;
+    color: var(--text-secondary, #888);
+}
+
+.scoreInput input {
+    padding: 0.75rem;
+    background: var(--bg-primary, #0a0a0a);
+    border: 1px solid var(--border-color, #333);
+    border-radius: 8px;
+    color: var(--text-primary, #fff);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+.vs {
+    font-size: 1.5rem;
+    color: var(--text-secondary, #888);
+    margin-bottom: 0.75rem;
+}
+
+.reasonInput {
+    margin-bottom: 1.5rem;
+}
+
+.reasonInput label {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--text-secondary, #888);
+    margin-bottom: 0.5rem;
+}
+
+.reasonInput textarea {
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--bg-primary, #0a0a0a);
+    border: 1px solid var(--border-color, #333);
+    border-radius: 8px;
+    color: var(--text-primary, #fff);
+    font-size: 0.875rem;
+    resize: vertical;
+    min-height: 80px;
+}
+
+.modalActions {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.saveButton,
+.cancelButton {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.saveButton {
+    background: var(--primary-color, #00a651);
+    color: white;
+}
+
+.saveButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.cancelButton {
+    background: transparent;
+    border: 1px solid var(--border-color, #333);
+    color: var(--text-primary, #fff);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .matchesGrid {
+        grid-template-columns: 1fr;
+    }
+}
