@@ -11,17 +11,19 @@ runConfig:
 env:
   # Firebase Configuration (public, can be in plaintext)
   - variable: NEXT_PUBLIC_FIREBASE_API_KEY
-    value: AIzaSyClkIaQfO5q1aQwKPiyvzoRLQnm5RC-wRk
+    value: AIzaSyB0mqzb-1cAZWD9QhIIawH2F0PkUYD7-Jc
   - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
-    value: matchday-e447b.firebaseapp.com
+    value: matchday-a4456.firebaseapp.com
   - variable: NEXT_PUBLIC_FIREBASE_PROJECT_ID
-    value: matchday-e447b
+    value: matchday-a4456
   - variable: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
-    value: matchday-e447b.firebasestorage.app
+    value: matchday-a4456.firebasestorage.app
   - variable: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
-    value: "914670665828"
+    value: "63812378962"
   - variable: NEXT_PUBLIC_FIREBASE_APP_ID
-    value: 1:914670665828:web:9821e5ead6eb39c852df71
+    value: 1:63812378962:web:e8e650c991544240b9da8b
+  - variable: NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
+    value: G-HR881DNL61
 
   # API-Football Configuration
   - variable: NEXT_PUBLIC_API_FOOTBALL_KEY

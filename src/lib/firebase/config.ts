@@ -3,12 +3,12 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyClkIaQfO5q1aQwKPiyvzoRLQnm5RC-wRk",
-  authDomain: "matchday-e447b.firebaseapp.com",
-  projectId: "matchday-e447b",
-  storageBucket: "matchday-e447b.firebasestorage.app",
-  messagingSenderId: "914670665828",
-  appId: "1:914670665828:web:9821e5ead6eb39c852df71"
+  apiKey: "AIzaSyB0mqzb-1cAZWD9QhIIawH2F0PkUYD7-Jc",
+  authDomain: "matchday-a4456.firebaseapp.com",
+  projectId: "matchday-a4456",
+  storageBucket: "matchday-a4456.firebasestorage.app",
+  messagingSenderId: "63812378962",
+  appId: "1:63812378962:web:e8e650c991544240b9da8b"
 };
 
 // Initialize Firebase
