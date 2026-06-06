@@ -1,61 +1,36 @@
-# Fantasy Matchday
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Fantasy Matchday is a live football fantasy and prediction web application built for the capstone project. The application includes match browsing, lineup submission, points calculation, leaderboards, leagues, credits, notifications, authentication, and Firebase deployment.
+## Getting Started
 
-This repository is the formal team-owned submission repository. The team consolidated existing local project work here so future development can happen through branches, pull requests, review, documentation, and role-based ownership.
-
-## Stack
-
-- Frontend: Next.js 14, React 18, TypeScript
-- Styling: CSS Modules and global CSS
-- Internationalization: next-intl with English and Arabic messages
-- Authentication: Firebase Authentication
-- Database: Cloud Firestore
-- Storage: Firebase Storage
-- Backend jobs and server logic: Firebase Cloud Functions, TypeScript, Node.js 20
-- Payments: Stripe
-- Football data: API-Football / API-Sports
-- Deployment: Firebase Hosting / Firebase App Hosting and Firebase Functions
-
-## Team Ownership
-
-| Member | Primary Area | Secondary Area |
-| --- | --- | --- |
-| Bakr Jamjoom | Git/project management | Deployment, testing, documentation |
-| Khalid Aleissa | Frontend/UI | Assets and design consistency |
-| Saud Dawood | Cloud Functions/backend | API integration and function testing |
-| Fahad Alhomaidhi | Authentication/database | Firestore rules and security |
-| Abdulmohsen Binkhamis | Leaderboard/business logic | Scoring and lineup logic |
-
-## Local Setup
-
-1. Install dependencies:
-
-```bash
-npm install
-```
-
-2. Create `.env.local` from `.env.example` and fill in the Firebase/API values.
-
-3. Run the frontend:
+First, run the development server:
 
 ```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-4. Install Cloud Functions dependencies when working on backend functions:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```bash
-cd functions
-npm install
-npm run build
-```
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Git Workflow
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-- `main` is the stable demo/submission branch.
-- `develop` is the integration branch.
-- All work should happen in role-based branches and pull requests.
-- Do not commit secrets, generated builds, `node_modules`, `.next`, `out`, or local runtime config.
+## Learn More
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) and [docs/github-workflow.md](docs/github-workflow.md).
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

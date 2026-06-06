@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard | Fantasy Matchday</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+            FANTASY<span class="text-primary">MATCHDAY</span>
+        </a>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+            <li><a href="lineup.html" class="nav-link">My Team</a></li>
+            <li><a href="leaderboard.html" class="nav-link active">Leagues</a></li>
+            <li><a href="#" class="nav-link"><i class="fas fa-bell"></i></a></li>
+            <li><a href="#" class="nav-link"><i class="fas fa-user-circle"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="section" style="padding-top: 140px;">
+        <div class="container">
+
+            <h2 class="text-center" style="margin-bottom: 3rem; font-size: 2.5rem;">GLOBAL <span
+                    class="text-primary">LEADERBOARD</span></h2>
+
+            <!-- Top 3 Podium -->
+            <div class="flex-center" style="align-items: flex-end; gap: 1rem; margin-bottom: 4rem; min-height: 200px;">
+
+                <!-- 2nd Place -->
+                <div class="text-center animate-float" style="animation-delay: 0.2s;">
+                    <div class="user-avatar-sm"
+                        style="width: 80px; height: 80px; border: 3px solid #C0C0C0; background: #333; border-radius: 50%; margin: 0 auto 1rem;">
+                    </div>
+                    <h3 style="font-size: 1.2rem;">Fahad</h3>
+                    <p class="text-primary" style="font-weight: 700;">1,420 pts</p>
+                    <div
+                        style="background: #C0C0C0; color: #000; padding: 0.5rem 1rem; border-radius: 20px; margin-top: 0.5rem; font-weight: 700;">
+                        2nd</div>
+                </div>
+
+                <!-- 1st Place -->
+                <div class="text-center animate-float">
+                    <div class="user-avatar-sm"
+                        style="width: 100px; height: 100px; border: 3px solid #FFD700; background: #333; border-radius: 50%; margin: 0 auto 1rem; box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);">
+                    </div>
+                    <h3 style="font-size: 1.5rem;">Mohammed</h3>
+                    <p class="text-primary" style="font-weight: 700;">1,550 pts</p>
+                    <div
+                        style="background: #FFD700; color: #000; padding: 0.5rem 1rem; border-radius: 20px; margin-top: 0.5rem; font-weight: 700;">
+                        1st</div>
+                </div>
+
+                <!-- 3rd Place -->
+                <div class="text-center animate-float" style="animation-delay: 0.4s;">
+                    <div class="user-avatar-sm"
+                        style="width: 80px; height: 80px; border: 3px solid #CD7F32; background: #333; border-radius: 50%; margin: 0 auto 1rem;">
+                    </div>
+                    <h3 style="font-size: 1.2rem;">Omar</h3>
+                    <p class="text-primary" style="font-weight: 700;">1,380 pts</p>
+                    <div
+                        style="background: #CD7F32; color: #000; padding: 0.5rem 1rem; border-radius: 20px; margin-top: 0.5rem; font-weight: 700;">
+                        3rd</div>
+                </div>
+
+            </div>
+
+            <!-- Leaderboard Table -->
+            <div class="card">
+                <div class="flex-between mb-2" style="margin-bottom: 1.5rem;">
+                    <h3>Top Managers</h3>
+                    <div class="flex" style="gap: 0.5rem;">
+                        <button class="btn btn-outline btn-sm"
+                            style="padding: 0.4rem 1rem; font-size: 0.8rem;">Global</button>
+                        <button class="btn btn-sm"
+                            style="padding: 0.4rem 1rem; font-size: 0.8rem; color: var(--color-text-muted);">Friends</button>
+                    </div>
+                </div>
+
+                <div style="overflow-x: auto;">
+                    <table class="leaderboard-table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Manager</th>
+                                <th>Team</th>
+                                <th>GW Points</th>
+                                <th>Total Points</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="rank-1">1</td>
+                                <td>
+                                    <div class="user-avatar-sm"
+                                        style="display:inline-block; width:30px; height:30px; background:#333; border-radius:50%; vertical-align:middle; margin-right:0.5rem;">
+                                    </div> Mohammed
+                                </td>
+                                <td>Blue Waves</td>
+                                <td>95</td>
+                                <td class="text-primary">1,550</td>
+                            </tr>
+                            <tr>
+                                <td class="rank-2">2</td>
+                                <td>
+                                    <div class="user-avatar-sm"
+                                        style="display:inline-block; width:30px; height:30px; background:#333; border-radius:50%; vertical-align:middle; margin-right:0.5rem;">
+                                    </div> Fahad
+                                </td>
+                                <td>Tigers FC</td>
+                                <td>88</td>
+                                <td class="text-primary">1,420</td>
+                            </tr>
+                            <tr>
+                                <td class="rank-3">3</td>
+                                <td>
+                                    <div class="user-avatar-sm"
+                                        style="display:inline-block; width:30px; height:30px; background:#333; border-radius:50%; vertical-align:middle; margin-right:0.5rem;">
+                                    </div> Omar
+                                </td>
+                                <td>Jeddah Kings</td>
+                                <td>92</td>
+                                <td class="text-primary">1,380</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>
+                                    <div class="user-avatar-sm"
+                                        style="display:inline-block; width:30px; height:30px; background:#333; border-radius:50%; vertical-align:middle; margin-right:0.5rem;">
+                                    </div> Khalid
+                                </td>
+                                <td>Riyadh United</td>
+                                <td>75</td>
+                                <td class="text-primary">1,350</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>
+                                    <div class="user-avatar-sm"
+                                        style="display:inline-block; width:30px; height:30px; background:#333; border-radius:50%; vertical-align:middle; margin-right:0.5rem;">
+                                    </div> Yasser
+                                </td>
+                                <td>Desert Storm</td>
+                                <td>82</td>
+                                <td class="text-primary">1,310</td>
+                            </tr>
+                            <!-- User's Rank -->
+                            <tr
+                                style="background: rgba(0, 255, 133, 0.1); border-left: 3px solid var(--color-primary);">
+                                <td>45</td>
+                                <td>
+                                    <div class="user-avatar-sm"
+                                        style="display:inline-block; width:30px; height:30px; background:#333; border-radius:50%; vertical-align:middle; margin-right:0.5rem;">
+                                    </div> Ahmed (You)
+                                </td>
+                                <td>Green Falcons</td>
+                                <td>85</td>
+                                <td class="text-primary">1,240</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="text-center" style="margin-top: 2rem;">
+                    <button class="btn btn-outline btn-sm">Load More</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,391 @@
+.pageWrapper {
+    min-height: 100vh;
+    background: var(--bg-primary, #0a0a0a);
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    color: var(--text-secondary, #888);
+    gap: 1rem;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary, #fff);
+}
+
+.subtitle {
+    margin: 0.25rem 0 0 0;
+    color: var(--text-secondary, #888);
+    font-size: 0.875rem;
+}
+
+.headerActions {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.joinBtn,
+.createBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.joinBtn {
+    background: transparent;
+    border: 1px solid var(--border-color, #333);
+    color: var(--text-primary, #fff);
+}
+
+.joinBtn:hover {
+    border-color: var(--primary-color, #00a651);
+    background: rgba(0, 166, 81, 0.1);
+}
+
+.createBtn {
+    background: var(--primary-color, #00a651);
+    border: none;
+    color: white;
+}
+
+.createBtn:hover {
+    background: #00b85c;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color, #222);
+    padding-bottom: 0.5rem;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background: transparent;
+    border: none;
+    color: var(--text-secondary, #888);
+    font-size: 0.875rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.tab:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary, #fff);
+}
+
+.tab.active {
+    background: var(--primary-color, #00a651);
+    color: white;
+}
+
+.count {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.125rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+}
+
+/* Leagues List */
+.leaguesList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1rem;
+    color: var(--text-secondary, #888);
+    text-align: center;
+}
+
+.empty h3 {
+    margin: 1rem 0 0.5rem 0;
+    color: var(--text-primary, #fff);
+}
+
+.empty p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+/* League Card */
+.leagueCard {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    background: var(--bg-secondary, #111);
+    border: 1px solid var(--border-color, #222);
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.leagueCard:hover {
+    border-color: var(--primary-color, #00a651);
+    background: rgba(0, 166, 81, 0.05);
+}
+
+.leagueIcon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 166, 81, 0.1);
+    border-radius: 10px;
+    color: var(--primary-color, #00a651);
+}
+
+.leagueInfo {
+    flex: 1;
+    min-width: 0;
+}
+
+.leagueInfo h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary, #fff);
+}
+
+.leagueMeta {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin: 0.25rem 0 0 0;
+    font-size: 0.75rem;
+    color: var(--text-secondary, #888);
+}
+
+.copyBtn {
+    padding: 0.5rem;
+    background: transparent;
+    border: 1px solid var(--border-color, #333);
+    border-radius: 6px;
+    color: var(--text-secondary, #888);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.copyBtn:hover {
+    border-color: var(--primary-color, #00a651);
+    color: var(--primary-color, #00a651);
+}
+
+.chevron {
+    color: var(--text-secondary, #888);
+}
+
+.joinLeagueBtn {
+    padding: 0.5rem 1rem;
+    background: var(--primary-color, #00a651);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.joinLeagueBtn:hover {
+    background: #00b85c;
+}
+
+/* Discover */
+.discover {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: var(--bg-secondary, #111);
+    border: 1px solid var(--border-color, #222);
+    border-radius: 10px;
+    color: var(--text-secondary, #888);
+}
+
+.searchBar input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--text-primary, #fff);
+    font-size: 0.875rem;
+    outline: none;
+}
+
+/* Modal */
+.modalOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 1rem;
+}
+
+.modal {
+    background: var(--bg-secondary, #111);
+    border: 1px solid var(--border-color, #222);
+    border-radius: 16px;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 420px;
+}
+
+.modal h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.25rem;
+    color: var(--text-primary, #fff);
+}
+
+.codeInput {
+    width: 100%;
+    padding: 1rem;
+    background: var(--bg-primary, #0a0a0a);
+    border: 1px solid var(--border-color, #333);
+    border-radius: 8px;
+    color: var(--text-primary, #fff);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.25em;
+    margin-bottom: 1rem;
+}
+
+.formGroup {
+    margin-bottom: 1rem;
+}
+
+.formGroup label {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-secondary, #888);
+    margin-bottom: 0.5rem;
+}
+
+.formGroup input,
+.formGroup textarea,
+.formGroup select {
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--bg-primary, #0a0a0a);
+    border: 1px solid var(--border-color, #333);
+    border-radius: 8px;
+    color: var(--text-primary, #fff);
+    font-size: 0.875rem;
+}
+
+.formGroup textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.error {
+    color: var(--danger-color, #dc3545);
+    font-size: 0.75rem;
+    margin: 0.5rem 0;
+}
+
+.modalActions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.cancelBtn,
+.confirmBtn {
+    flex: 1;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.cancelBtn {
+    background: transparent;
+    border: 1px solid var(--border-color, #333);
+    color: var(--text-primary, #fff);
+}
+
+.confirmBtn {
+    background: var(--primary-color, #00a651);
+    border: none;
+    color: white;
+}
+
+.confirmBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 640px) {
+    .header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .headerActions {
+        justify-content: stretch;
+    }
+
+    .headerActions button {
+        flex: 1;
+        justify-content: center;
+    }
+}
