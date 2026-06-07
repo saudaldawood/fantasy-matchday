@@ -6,7 +6,7 @@
  */
 
 import React, { useState, useEffect } from 'react';
-import { useTranslations } from 'next-intl';
+import { useLocale } from 'next-intl';
 import {
     Users,
     UserPlus,
@@ -38,7 +38,8 @@ import styles from './page.module.css';
 type Tab = 'friends' | 'requests' | 'find' | 'leaderboard';
 
 export default function FriendsPage() {
-    const t = useTranslations('Friends');
+    const locale = useLocale();
+    const isArabic = locale === 'ar';
     const { user, profile } = useAuth();
 
     const [activeTab, setActiveTab] = useState<Tab>('friends');
@@ -148,7 +149,7 @@ export default function FriendsPage() {
             <div className={styles.container}>
                 <div className={styles.notLoggedIn}>
                     <Users size={48} />
-                    <h2>Please log in to view friends</h2>
+                    <h2>{isArabic ? 'يرجى تسجيل الدخول لعرض الأصدقاء' : 'Please log in to view friends'}</h2>
                 </div>
             </div>
         );
@@ -159,10 +160,10 @@ export default function FriendsPage() {
             <header className={styles.header}>
                 <h1 className={styles.title}>
                     <Users size={28} />
-                    Friends
+                    {isArabic ? 'الأصدقاء' : 'Friends'}
                 </h1>
                 <p className={styles.subtitle}>
-                    Connect with other players and compete together
+                    {isArabic ? 'تواصل مع لاعبين آخرين وتنافس معهم' : 'Connect with other players and compete together'}
                 </p>
             </header>
 
@@ -173,14 +174,14 @@ export default function FriendsPage() {
                     onClick={() => setActiveTab('friends')}
                 >
                     <Users size={18} />
-                    My Friends ({friends.length})
+                    {isArabic ? 'أصدقائي' : 'My Friends'} ({friends.length})
                 </button>
                 <button
                     className={`${styles.tab} ${activeTab === 'requests' ? styles.active : ''}`}
                     onClick={() => setActiveTab('requests')}
                 >
                     <UserPlus size={18} />
-                    Requests
+                    {isArabic ? 'الطلبات' : 'Requests'}
                     {pendingRequests.length > 0 && (
                         <span className={styles.badge}>{pendingRequests.length}</span>
                     )}
@@ -190,14 +191,14 @@ export default function FriendsPage() {
                     onClick={() => setActiveTab('find')}
                 >
                     <Search size={18} />
-                    Find Friends
+                    {isArabic ? 'ابحث عن أصدقاء' : 'Find Friends'}
                 </button>
                 <button
                     className={`${styles.tab} ${activeTab === 'leaderboard' ? styles.active : ''}`}
                     onClick={() => setActiveTab('leaderboard')}
                 >
                     <Trophy size={18} />
-                    Leaderboard
+                    {isArabic ? 'قائمة المتصدرين' : 'Leaderboard'}
                 </button>
             </div>
 
@@ -206,7 +207,7 @@ export default function FriendsPage() {
                 {loading ? (
                     <div className={styles.loading}>
                         <div className={styles.spinner}></div>
-                        <p>Loading...</p>
+                        <p>{isArabic ? 'جاري التحميل...' : 'Loading...'}</p>
                     </div>
                 ) : (
                     <>
@@ -216,13 +217,13 @@ export default function FriendsPage() {
                                 {friends.length === 0 ? (
                                     <div className={styles.empty}>
                                         <Users size={48} />
-                                        <h3>No friends yet</h3>
-                                        <p>Find other players and send friend requests!</p>
+                                        <h3>{isArabic ? 'لا يوجد أصدقاء بعد' : 'No friends yet'}</h3>
+                                        <p>{isArabic ? 'ابحث عن لاعبين آخرين وأرسل طلبات صداقة!' : 'Find other players and send friend requests!'}</p>
                                         <button
                                             className={styles.primaryButton}
                                             onClick={() => setActiveTab('find')}
                                         >
-                                            Find Friends
+                                            {isArabic ? 'ابحث عن أصدقاء' : 'Find Friends'}
                                         </button>
                                     </div>
                                 ) : (
@@ -237,7 +238,7 @@ export default function FriendsPage() {
                                             </div>
                                             <div className={styles.friendInfo}>
                                                 <h4>{friend.odisplayName}</h4>
-                                                <p>{friend.totalPoints} total points</p>
+                                                <p>{friend.totalPoints} {isArabic ? 'إجمالي النقاط' : 'total points'}</p>
                                             </div>
                                             <div className={styles.friendActions}>
                                                 <button
@@ -257,9 +258,9 @@ export default function FriendsPage() {
                         {/* Friend Requests */}
                         {activeTab === 'requests' && (
                             <div className={styles.requestsList}>
-                                <h3>Pending Requests</h3>
+                                <h3>{isArabic ? 'الطلبات المعلقة' : 'Pending Requests'}</h3>
                                 {pendingRequests.length === 0 ? (
-                                    <p className={styles.emptyText}>No pending requests</p>
+                                    <p className={styles.emptyText}>{isArabic ? 'لا توجد طلبات معلقة' : 'No pending requests'}</p>
                                 ) : (
                                     pendingRequests.map(request => (
                                         <div key={request.id} className={styles.requestCard}>
@@ -272,7 +273,7 @@ export default function FriendsPage() {
                                             </div>
                                             <div className={styles.requestInfo}>
                                                 <h4>{request.senderName}</h4>
-                                                <p><Clock size={12} /> Sent a friend request</p>
+                                                <p><Clock size={12} /> {isArabic ? 'أرسل طلب صداقة' : 'Sent a friend request'}</p>
                                             </div>
                                             <div className={styles.requestActions}>
                                                 <button
@@ -294,9 +295,9 @@ export default function FriendsPage() {
                                     ))
                                 )}
 
-                                <h3 style={{ marginTop: '2rem' }}>Sent Requests</h3>
+                                <h3 style={{ marginTop: '2rem' }}>{isArabic ? 'الطلبات المرسلة' : 'Sent Requests'}</h3>
                                 {sentRequests.length === 0 ? (
-                                    <p className={styles.emptyText}>No sent requests</p>
+                                    <p className={styles.emptyText}>{isArabic ? 'لا توجد طلبات مرسلة' : 'No sent requests'}</p>
                                 ) : (
                                     sentRequests.map(request => (
                                         <div key={request.id} className={styles.requestCard}>
@@ -309,7 +310,7 @@ export default function FriendsPage() {
                                             </div>
                                             <div className={styles.requestInfo}>
                                                 <h4>{request.receiverName}</h4>
-                                                <p>Pending...</p>
+                                                <p>{isArabic ? 'قيد الانتظار...' : 'Pending...'}</p>
                                             </div>
                                         </div>
                                     ))
@@ -323,7 +324,7 @@ export default function FriendsPage() {
                                 <div className={styles.searchBox}>
                                     <input
                                         type="text"
-                                        placeholder="Search by username..."
+                                        placeholder={isArabic ? 'ابحث باسم المستخدم...' : 'Search by username...'}
                                         value={searchTerm}
                                         onChange={(e) => setSearchTerm(e.target.value)}
                                         onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
@@ -340,7 +341,7 @@ export default function FriendsPage() {
                                 <div className={styles.searchResults}>
                                     {searchResults.length === 0 ? (
                                         <p className={styles.emptyText}>
-                                            Search for users to add as friends
+                                            {isArabic ? 'ابحث عن مستخدمين لإضافتهم كأصدقاء' : 'Search for users to add as friends'}
                                         </p>
                                     ) : (
                                         searchResults.map(user => (
@@ -361,7 +362,7 @@ export default function FriendsPage() {
                                                     disabled={actionLoading === user.id}
                                                 >
                                                     <Send size={16} />
-                                                    Add Friend
+                                                    {isArabic ? 'إضافة صديق' : 'Add Friend'}
                                                 </button>
                                             </div>
                                         ))
@@ -376,15 +377,15 @@ export default function FriendsPage() {
                                 {leaderboard.length === 0 ? (
                                     <div className={styles.empty}>
                                         <Trophy size={48} />
-                                        <h3>No friends to compare</h3>
-                                        <p>Add friends to see how you rank against them!</p>
+                                        <h3>{isArabic ? 'لا يوجد أصدقاء للمقارنة' : 'No friends to compare'}</h3>
+                                        <p>{isArabic ? 'أضف أصدقاء لمعرفة ترتيبك بالمقارنة معهم!' : 'Add friends to see how you rank against them!'}</p>
                                     </div>
                                 ) : (
                                     <div className={styles.leaderboardTable}>
                                         <div className={styles.tableHeader}>
-                                            <div>Rank</div>
-                                            <div>Friend</div>
-                                            <div>Points</div>
+                                            <div>{isArabic ? 'المركز' : 'Rank'}</div>
+                                            <div>{isArabic ? 'الصديق' : 'Friend'}</div>
+                                            <div>{isArabic ? 'النقاط' : 'Points'}</div>
                                         </div>
                                         {leaderboard.map((entry, index) => (
                                             <div key={index} className={styles.tableRow}>
