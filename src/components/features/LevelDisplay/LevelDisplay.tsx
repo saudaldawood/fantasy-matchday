@@ -6,6 +6,7 @@
  */
 
 import React, { useState, useEffect } from 'react';
+import { useLocale } from 'next-intl';
 import { useAuth } from '@/providers/AuthProvider';
 import { getUserLevelInfo, getLevelConfig, LEVELS } from '@/services/levels';
 import styles from './LevelDisplay.module.css';
@@ -22,6 +23,7 @@ export default function LevelDisplay({
     showProgress = true
 }: LevelDisplayProps) {
     const { user } = useAuth();
+    const isArabic = useLocale() === 'ar';
     const [levelInfo, setLevelInfo] = useState<{
         level: number;
         levelName: string;
@@ -185,7 +187,7 @@ export function LevelProgressCard() {
             {nextLevel && (
                 <div className={styles.nextLevel}>
                     <span>Next: {nextLevel.icon} {nextLevel.name}</span>
-                    <span className={styles.reward}>+{nextLevel.rewards.credits} credits</span>
+                    <span className={styles.reward}>+{nextLevel.rewards.credits} {isArabic ? 'رصيد' : 'credits'}</span>
                 </div>
             )}
         </div>
