@@ -383,13 +383,19 @@ export async function searchUsers(
         limit(limitCount)
     );
 
-    const snapshot = await getDocs(usersQuery);
+    const [snapshot, currentUserDoc] = await Promise.all([
+        getDocs(usersQuery),
+        getDoc(doc(db, 'users', currentUserId)),
+    ]);
+
+    const friendIds: string[] = currentUserDoc.data()?.friends || [];
+
     return snapshot.docs
-        .filter(doc => doc.id !== currentUserId)
-        .map(doc => ({
-            id: doc.id,
-            displayName: doc.data().displayName || 'User',
-            avatarUrl: doc.data().avatarUrl,
+        .filter(d => d.id !== currentUserId && !friendIds.includes(d.id))
+        .map(d => ({
+            id: d.id,
+            displayName: d.data().displayName || 'User',
+            avatarUrl: d.data().avatarUrl,
         }));
 }
 
