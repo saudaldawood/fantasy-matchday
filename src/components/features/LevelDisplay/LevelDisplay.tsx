@@ -131,6 +131,7 @@ export function LevelBadge({ level }: { level: number }) {
  */
 export function LevelProgressCard() {
     const { user } = useAuth();
+    const isArabic = useLocale() === 'ar';
     const [levelInfo, setLevelInfo] = useState<any>(null);
     const [loading, setLoading] = useState(true);
 
