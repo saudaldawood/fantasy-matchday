@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Fantasy Matchday</title>
+    <h3 class="section-title" style="text-align: left; font-size: 1.8rem; margin-bottom: 1.5rem;">Live Matches
+    </h3>
+    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); margin-bottom: 3rem;">
+
+        <!-- Match Card 1 (Live) -->
+        <div class="card match-card">
+            <div class="match-status status-live">LIVE 65'</div>
+            <div class="teams-vs">
+                <div class="team">
+                    <div class="team-logo"><i class="fas fa-shield-alt"></i></div>
+                    <h4>Al-Hilal</h4>
+                </div>
+                <div class="score">2 - 1</div>
+                <div class="team">
+                    <div class="team-logo"><i class="fas fa-shield-alt"></i></div>
+                    <h4>Al-Nassr</h4>
+                </div>
+            </div>
+            <div class="text-center">
+                <p style="color: var(--color-grey); font-size: 0.9rem; margin-bottom: 1rem;">King Fahd Stadium
+                </p>
+                <a href="lineup.html" class="btn btn-outline btn-sm">View My Lineup</a>
+            </div>
+        </div>
+
+        <!-- Match Card 2 (Upcoming) -->
+        <div class="card match-card">
+            <div class="match-status status-upcoming">Today 20:00</div>
+            <div class="teams-vs">
+                <div class="team">
+                    <div class="team-logo"><i class="fas fa-shield-alt"></i></div>
+                    <h4>Al-Ittihad</h4>
+                </div>
+                <div class="vs-badge">VS</div>
+                <div class="team">
+                    <div class="team-logo"><i class="fas fa-shield-alt"></i></div>
+                    <h4>Al-Ahli</h4>
+                </div>
+            </div>
+            <div class="text-center">
+                <p style="color: var(--color-grey); font-size: 0.9rem; margin-bottom: 1rem;">King Abdullah
+                    Sports City</p>
+                <a href="lineup.html" class="btn btn-primary btn-sm">Pick Team</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Recent Performance -->
+    <h3 class="section-title" style="text-align: left; font-size: 1.8rem; margin-bottom: 1.5rem;">Your
+        Performance</h3>
+    <div class="card">
+        <div class="flex-between"
+            style="border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1rem; margin-bottom: 1rem;">
+            <h4>Last Matchday</h4>
+            <span class="text-accent">85 Points</span>
+        </div>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 1rem;">
+            <div class="text-center">
+                <div class="player-kit" style="margin: 0 auto 0.5rem;">9</div>
+                <p style="font-size: 0.9rem;">Benzema</p>
+                <span class="text-accent">+12 pts</span>
+            </div>
+            <div class="text-center">
+                <div class="player-kit" style="margin: 0 auto 0.5rem;">7</div>
+                <p style="font-size: 0.9rem;">Ronaldo</p>
+                <span class="text-accent">+8 pts</span>
+            </div>
+            <div class="text-center">
+                <div class="player-kit" style="margin: 0 auto 0.5rem;">10</div>
+                <p style="font-size: 0.9rem;">Neymar</p>
+                <span class="text-accent">+15 pts</span>
+            </div>
+            <div class="text-center">
+                <div class="player-kit" style="margin: 0 auto 0.5rem;">1</div>
+                <p style="font-size: 0.9rem;">Bono</p>
+                <span class="text-accent">+6 pts</span>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </main>
+
+    <script src="script.js"></script>
+    </body>
+
+</html>

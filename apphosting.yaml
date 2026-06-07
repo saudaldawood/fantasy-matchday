@@ -1,5 +1,5 @@
 # Firebase App Hosting configuration
-# Production values should be configured through Firebase/App Hosting environment settings.
+# See: https://firebase.google.com/docs/app-hosting/configure
 
 runConfig:
   concurrency: 80
@@ -9,23 +9,36 @@ runConfig:
   maxInstances: 2
 
 env:
+  # Firebase Configuration (public, can be in plaintext)
   - variable: NEXT_PUBLIC_FIREBASE_API_KEY
-    value: ${NEXT_PUBLIC_FIREBASE_API_KEY}
+    value: AIzaSyB0mqzb-1cAZWD9QhIIawH2F0PkUYD7-Jc
   - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
-    value: ${NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN}
+    value: matchday-a4456.firebaseapp.com
   - variable: NEXT_PUBLIC_FIREBASE_PROJECT_ID
-    value: ${NEXT_PUBLIC_FIREBASE_PROJECT_ID}
+    value: matchday-a4456
   - variable: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
-    value: ${NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET}
+    value: matchday-a4456.firebasestorage.app
   - variable: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
-    value: ${NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID}
+    value: "63812378962"
   - variable: NEXT_PUBLIC_FIREBASE_APP_ID
-    value: ${NEXT_PUBLIC_FIREBASE_APP_ID}
+    value: 1:63812378962:web:e8e650c991544240b9da8b
+  - variable: NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
+    value: G-HR881DNL61
+
+  # API-Football Configuration
   - variable: NEXT_PUBLIC_API_FOOTBALL_KEY
-    value: ${NEXT_PUBLIC_API_FOOTBALL_KEY}
+    value: cae5fd50147bb2b2094c561ff214dfcf
   - variable: NEXT_PUBLIC_API_FOOTBALL_HOST
-    value: ${NEXT_PUBLIC_API_FOOTBALL_HOST}
+    value: v3.football.api-sports.io
   - variable: NEXT_PUBLIC_SPL_LEAGUE_ID
     value: "307"
+  - variable: NEXT_PUBLIC_SPL_SEASON
+    value: "2025"
+
+  # Firebase Cloud Messaging
+  - variable: NEXT_PUBLIC_FIREBASE_VAPID_KEY
+    value: 8oSzcInlHSPQqtJr7LsRfqD84Ux_6JWejJldsHOD2oo
+
+  # Stripe (public key only)
   - variable: NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
-    value: ${NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY}
+    value: pk_test_51TfOCyLdHlI5eveBN0lRYjl0LuocXvDeawSAWHOMBr725klWy3qEKdrz7sDnb8GPzq88vm5eL9PWmfpzSsn6s05L00JR35hoNp
