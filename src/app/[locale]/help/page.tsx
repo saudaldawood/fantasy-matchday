@@ -83,11 +83,11 @@ export default function HelpCenterPage() {
                             <div className={styles.sectionContent}>
                                 <div className={styles.faqItem}>
                                     <h3>{isArabic ? 'كيف أختار اللاعبين؟' : 'How do I select players?'}</h3>
-                                    <p>{isArabic ? 'اذهب إلى المباريات، واختر مباراة قادمة، ثم اختر 11 لاعبًا أساسيًا و4 لاعبين احتياطيين من الفريقين المشاركين في تلك المباراة.' : 'Go to Matches, select an upcoming match, then choose 11 starting players and 4 bench players from both teams playing in that match.'}</p>
+                                    <p>{isArabic ? 'اذهب إلى المباريات، واختر مباراة قادمة، ثم اختر 3 لاعبين من الفريقين المشاركين في تلك المباراة. اضغط على اللاعب لإضافته إلى فريقك، ثم عيّن أحدهم ليكون قائدك.' : 'Go to Matches, pick an upcoming match, then choose 3 players from the two teams playing in that match. Tap a player to add them to your squad, then set one of them as your captain.'}</p>
                                 </div>
                                 <div className={styles.faqItem}>
-                                    <h3>{isArabic ? 'ما التشكيلات التي يمكنني استخدامها؟' : 'What formations can I use?'}</h3>
-                                    <p>{isArabic ? 'يجب اختيار حارس مرمى واحد، و3-5 مدافعين، و3-5 لاعبي وسط، و1-3 مهاجمين. من التشكيلات الشائعة 4-4-2 و4-3-3 و3-5-2.' : 'You must select 1 GK, 3-5 DEF, 3-5 MID, and 1-3 FWD. Popular formations include 4-4-2, 4-3-3, and 3-5-2.'}</p>
+                                    <h3>{isArabic ? 'هل توجد قواعد لاختيار اللاعبين؟' : 'Are there any rules for picking players?'}</h3>
+                                    <p>{isArabic ? 'نعم — تختار 3 لاعبين بالضبط، ولا يمكن أن يكونوا جميعًا من الفريق نفسه (لاعب واحد على الأقل من كل فريق). لا يُسمح بتكرار اللاعب نفسه، ويجب أن يكون أحد اختياراتك هو القائد الذي يحصل على ضعف النقاط.' : "Yes — you pick exactly 3 players, and they can't all be from the same team (at least one from each side). No duplicate players, and one of your picks must be the captain, who earns double points."}</p>
                                 </div>
                                 <div className={styles.faqItem}>
                                     <h3>{isArabic ? 'ما هو الموعد النهائي لتقديم التشكيلة؟' : 'When is the lineup deadline?'}</h3>

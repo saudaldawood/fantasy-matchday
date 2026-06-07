@@ -51,7 +51,7 @@ export const Navbar = () => {
                 <li><Link href="/matches" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>{t('matches')}</Link></li>
                 <li><Link href="/lineup" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>{t('lineup')}</Link></li>
                 <li><Link href="/leaderboard" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>{t('leaderboard')}</Link></li>
-                <li><Link href="/credits" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>{'Credits'}</Link></li>
+                <li><Link href="/credits" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>{tUser('credits')}</Link></li>
                 <li><Link href="/achievements" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>{t('achievements')}</Link></li>
                 <li><Link href="/friends" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>{t('friends') || 'Friends'}</Link></li>
                 <li><Link href="/help" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>{t('help')}</Link></li>
